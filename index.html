@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="en" class="bg-slate-950">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <!-- font awesome cdn file link  -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"
+        integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+    <!-- tailwind css cdn file link  -->
+    <link href="https://cdn.jsdelivr.net/npm/daisyui@3.7.3/dist/full.css" rel="stylesheet" type="text/css" />
+    <script src="https://cdn.tailwindcss.com"></script>
+
+</head>
+
+<body>
+
+
+    <header>
+    </header>
+
+    <main class="text-white">
+        <div class="max-w-[300px] mx-auto mt-5 p-2 border-2 border-gray-400 rounded-md  shadow-gray-500 shadow-inner">
+            <!-- ========================= title container ============================== -->
+            <div class="text-center text-2xl font-bold text-teal-400 mb-6">
+                <h1>Calculator</h1>
+            </div>
+
+            <!-- ========================= out put container ============================== -->
+            <div id="outPut" class="w-full h-[50px] p-2 my-3 bg-slate-400 text-black flex justify-center items-center font-bold
+                 rounded-sm">
+                10010110 </div>
+
+            <!-- ========================= button container ============================== -->
+            <div class="grid grid-cols-4 gap-2 ">
+                <!-- ======================================================== -->
+
+                <div id="close" class=" hover:cursor-pointer col-span-1 rounded-sm p-1 py-2 bg-gray-700 flex items-center justify-center text-xl
+                text-[#D10000] ">
+                    Close
+                </div>
+                <div id="ac" class="hover:cursor-pointer col-span-1 rounded-sm p-1 py-2 bg-gray-700 flex items-center justify-center
+                text-[#D10000] text-xl  ">
+                    AC
+                </div>
+                <div id="delete-right" class="hover:cursor-pointer col-span-1 rounded-sm p-1 py-2 bg-gray-700 flex items-center justify-center 
+                text-red-500    font-bold">
+                    <figure class=" rotate-180 flex justify-center items-center">
+                        <img class="w-2/3 object-cover" src="image/delete-left-thin.svg" alt="">
+                    </figure>
+                </div>
+
+                <div id="backspace" class="hover:cursor-pointer col-span-1 rounded-sm p-1 py-2 bg-gray-700 flex items-center justify-center 
+                text-red-500    font-bold">
+                    <figure class="flex justify-center items-center">
+                        <img class="w-2/3 object-cover" src="image/delete-left-thin.svg" alt="">
+                    </figure>
+                </div>
+
+
+
+
+                <!-- ============================================================= -->
+                <div
+                    class="  mm-cmd-btn  hover:cursor-pointer col-span-1 rounded-sm p-1 py-2 bg-gray-700 flex items-center justify-center ">
+                    1
+                </div>
+                <div
+                    class=" mm-cmd-btn  hover:cursor-pointer col-span-1 rounded-sm p-1 py-2 bg-gray-700 flex items-center justify-center ">
+                    2
+                </div>
+                <div
+                    class="  mm-cmd-btn  hover:cursor-pointer col-span-1 rounded-sm p-1 py-2 bg-gray-700 flex items-center justify-center ">
+                    3
+                </div>
+
+                <div id="plus" class=" hover:cursor-pointer  col-span-1 rounded-sm p-1 py-2 bg-gray-700 flex items-center justify-center 
+                text-teal-400  text-2xl">
+                    +
+                    <!-- <i class="fa-solid fa-plus"></i> -->
+                </div>
+                <!-- ======================================================== -->
+                <div
+                    class=" mm-cmd-btn  hover:cursor-pointer col-span-1 rounded-sm p-1 py-2 bg-gray-700 flex items-center justify-center ">
+                    4
+                </div>
+                <div
+                    class=" mm-cmd-btn  hover:cursor-pointer col-span-1 rounded-sm p-1 py-2 bg-gray-700 flex items-center justify-center ">
+                    5
+                </div>
+                <div
+                    class=" mm-cmd-btn  hover:cursor-pointer col-span-1 rounded-sm p-1 py-2 bg-gray-700 flex items-center justify-center ">
+                    6
+                </div>
+                <div id="minus" class="hover:cursor-pointer col-span-1 rounded-sm p-1 py-2 bg-gray-700 flex items-center justify-center 
+                text-teal-400   text-2xl">
+                    <span class="text-center scale-x-150">-</span>
+                    <!-- <i class="fa-solid fa-minus"></i> -->
+                </div>
+                <!-- ======================================================== -->
+                <div
+                    class=" mm-cmd-btn  hover:cursor-pointer col-span-1 rounded-sm p-1 py-2 bg-gray-700 flex items-center justify-center ">
+                    7
+                </div>
+                <div
+                    class=" mm-cmd-btn  hover:cursor-pointer col-span-1 rounded-sm p-1 py-2 bg-gray-700 flex items-center justify-center ">
+                    8
+                </div>
+                <div
+                    class=" mm-cmd-btn  hover:cursor-pointer col-span-1 rounded-sm p-1 py-2 bg-gray-700 flex items-center justify-center ">
+                    9
+                </div>
+                <div id="divide" class="hover:cursor-pointer col-span-1 rounded-sm p-1 py-2 bg-gray-700 flex items-center justify-center 
+                text-teal-400  text-2xl">
+                    /
+                    <!-- <i class="fa-solid fa-divide"></i> -->
+                </div>
+                <div
+                    class=" mm-cmd-btn  hover:cursor-pointer col-span-1 rounded-sm p-1 py-2 bg-gray-700 flex items-center justify-center ">
+                    0
+                </div>
+                <div id="equal" class="hover:cursor-pointer col-span-2 rounded-sm p-1 py-2 bg-gray-700 flex items-center justify-center 
+                text-teal-400 font-bold">
+                   <span class="scale-x-[2]">
+                    <i class="fa-solid fa-equals"></i>
+                   </span>
+                </div>
+
+                <div id="multiply" class=" hover:cursor-pointer col-span-1 rounded-sm p-1 py-2 bg-gray-700 flex items-center justify-center 
+                text-teal-400   text-2xl">
+                    *
+                    <!-- <i class="fa-solid fa-xmark"></i> -->
+                </div>
+
+
+            </div><!-- button container-->
+        </div><!-- calculator main conatainer-->
+    </main>
+
+
+    <script src="script.js"></script>
+</body>
+
+</html>
